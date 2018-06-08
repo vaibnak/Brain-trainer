@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.getbetter.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/adder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30sp"
+        android:inputType="number"
+        android:textSize="15sp"
+         />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30sp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/addend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30sp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="50dp"
+
+        android:gravity="right"
+        android:inputType="number"
+        android:text="3"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp" />
+</LinearLayout>
+    <Button
+        android:id="@+id/shownew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="START"
+        android:onClick="start"
+        />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:id="@+id/i1"
+            android:text="tag 1"
+            android:layout_row="0"
+            android:onClick="click"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_gravity="fill"
+            />
+        <Button
+            android:id="@+id/i2"
+            android:text="tag 2"
+            android:tag="2"
+            android:onClick="click"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            />
+        <Button
+            android:id="@+id/i3"
+            android:text="tag 3"
+            android:tag="3"
+            android:onClick="click"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            />
+        <Button
+            android:id="@+id/i4"
+            android:text="tag 4"
+            android:tag="4"
+            android:onClick="click"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            />
+
+    </GridLayout>
+    <TextView
+        android:id="@+id/points"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="points"
+        />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="points"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="50dp" />
+</LinearLayout>
